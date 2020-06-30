@@ -10,33 +10,33 @@
     <div id="Calendar"></div>
     <div id="Photos"></div>
     <div id="About"></div>
-    <div id="Reviews"></div>
+    <div id="reviews-root"></div>
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 
     <!-- script tags for each component here -->
-    <script src="http://localhost:3001/app.js"></script>
+    <!-- <script src="http://localhost:3001/app.js"></script>
     <script src="http://localhost:3002/app.js"></script>
-    <script src="http://localhost:3003/app.js"></script>
-    <script src="http://localhost:3004/app.js"></script>
+    <script src="http://localhost:3003/app.js"></script> -->
+    <script src="http://localhost:3004/reviews/bundle.js"></script>
 
     <script>
+      // ReactDOM.render(
+      //   React.createElement(Calendar),
+      //   document.getElementById('Calendar')
+      // );
+      // ReactDOM.render(
+      //   React.createElement(Photos),
+      //   document.getElementById('Photos')
+      // );
+      // ReactDOM.render(
+      //   React.createElement(About),
+      //   document.getElementById('About')
+      // );
       ReactDOM.render(
-        React.createElement(Calendar),
-        document.getElementById('Calendar')
-      );
-      ReactDOM.render(
-        React.createElement(Photos),
-        document.getElementById('Photos')
-      );
-      ReactDOM.render(
-        React.createElement(About),
-        document.getElementById('About')
-      );
-      ReactDOM.render(
-        React.createElement(Reviews),
-        document.getElementById('Reviews')
+        React.createElement(App),
+        document.getElementById('reviews-root')
       );
     </script>
 
