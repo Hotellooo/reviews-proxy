@@ -36,7 +36,10 @@ app.all('/api/:hotelId/photos', (req, res) => {
 });
 
 // ABOUT
-
+app.all('/api/photos/*', (req, res) => {
+  console.log('redirecting to photos-carousel server');
+  apiProxy.web(req, res, {target: photosServer, changeOrigin: true});
+});
 
 // REVIEWS
 app.all('/reviews/*', (req, res) => {

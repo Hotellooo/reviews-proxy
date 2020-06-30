@@ -1,0 +1,10 @@
+.eHJVFS {
+  background-color: #fff;
+}
+#photos-home {
+  float: left;
+  margin-bottom: 10px;
+}
+#photos-home:after{
+  clear: both;
+}
