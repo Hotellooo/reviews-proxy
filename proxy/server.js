@@ -4,19 +4,14 @@ const app = express();
 const httpProxy = require('http-proxy');
 const port = process.env.PORT || 2999;
 const apiProxy = httpProxy.createProxyServer();
-const cors = require('cors');
-app.use(cors());
 
 const calendarServer = 'http://localhost:3001';
-// const photosServer = 'http://localhost:3002';
+const photosServer = 'http://localhost:3002';
 // const aboutServer = 'http://localhost:3003';
 const reviewsServer = 'http://localhost:3004';
 
 
-
 // CALENDAR
-
-// / <-- static
 
 app.all('/api/calendar/db/*', (req, res) => {
   console.log('redirecting to calendar server');
@@ -28,10 +23,17 @@ app.all('/api/calendar/update/', (req, res) => {
   apiProxy.web(req, res, {target: calendarServer, changeOrigin: true});
 });
 
-// /api/calendar/update/
-
 // PHOTOS
 
+// app.all('/*', (req, res) => {
+//   console.log('redirecting to photos-carousel server');
+//   apiProxy.web(req, res, {target: photosServer, changeOrigin: true});
+// });
+
+app.all('/api/:hotelId/photos', (req, res) => {
+  console.log('redirecting to photos-carousel server');
+  apiProxy.web(req, res, {target: photosServer, changeOrigin: true});
+});
 
 // ABOUT
 
