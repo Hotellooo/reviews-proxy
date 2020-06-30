@@ -7,7 +7,7 @@ const apiProxy = httpProxy.createProxyServer();
 
 const calendarServer = 'http://localhost:3001';
 const photosServer = 'http://localhost:3002';
-// const aboutServer = 'http://localhost:3003';
+const aboutServer = 'http://localhost:3003';
 const reviewsServer = 'http://localhost:3004';
 
 
@@ -37,8 +37,8 @@ app.all('/api/:hotelId/photos', (req, res) => {
 
 // ABOUT
 app.all('/api/photos/*', (req, res) => {
-  console.log('redirecting to photos-carousel server');
-  apiProxy.web(req, res, {target: photosServer, changeOrigin: true});
+  console.log('redirecting to about server');
+  apiProxy.web(req, res, {target: aboutServer, changeOrigin: true});
 });
 
 // REVIEWS
