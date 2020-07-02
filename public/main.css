@@ -64,3 +64,18 @@ div.box-dialog {
   left: 30%;
   transform: translate(-50%, -50%);
 }
+
+div.App__AppWrapper-sc-17y3snd-1.ePDwLM {
+  padding: 38px;
+  margin-left: 0px;
+}
+
+div.App__AppWrapper-sc-17y3snd-1.ePDwLM {
+  height: 800px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+  border: 1px solid #e0e0e0;
+}
+
+div.app {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+}
