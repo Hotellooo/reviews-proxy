@@ -8,7 +8,7 @@ const apiProxy = httpProxy.createProxyServer();
 const calendarServer = 'http://localhost:3001';
 const photosServer = 'http://localhost:3002';
 const aboutServer = 'http://localhost:3003';
-const reviewsServer = 'http://localhost:3004';
+const reviewsServer = 'http://13.57.249.34';
 
 
 // CALENDAR
