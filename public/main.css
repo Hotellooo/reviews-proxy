@@ -57,3 +57,10 @@ div.App__Container-sc-1yy6cbu-2.egYcud {
 div.sc-fznNvL.jRyzVK {
   height: 492px;
 }
+
+div.box-dialog {
+  position: absolute;
+  top: 147%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
