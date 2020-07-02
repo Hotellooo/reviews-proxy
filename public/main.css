@@ -19,6 +19,7 @@ html {
 
 #photos-home {
   display: inline-block;
+  margin-bottom: 12px;
 }
 
 #about {
@@ -45,4 +46,8 @@ div.App__Outer-sc-1yy6cbu-1.ZoPAK {
 div.App__Container-sc-1yy6cbu-2.egYcud {
   padding-top: 2px;
   padding-bottom: 2px;
+}
+
+div.sc-fznNvL.jRyzVK {
+  height: 490px;
 }
