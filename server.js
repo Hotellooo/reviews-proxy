@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const httpProxy = require('http-proxy');
-const port = process.env.PORT || 2999;
+const port = process.env.PORT || 3000;
 const apiProxy = httpProxy.createProxyServer();
 
 const calendarServer = 'http://localhost:3001';
