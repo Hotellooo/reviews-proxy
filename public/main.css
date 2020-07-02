@@ -97,3 +97,13 @@ div.app {
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
   width: 800px;
 }
+
+h1.page-title {
+  font-family: "Trips Sans", Arial, sans-serif;
+}
+div.page-title {
+  color: #00aa6c;
+  background-color: #001f3f;
+  padding-left: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+}
