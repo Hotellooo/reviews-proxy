@@ -20,7 +20,7 @@ html {
 
 #photos-home {
   display: inline-block;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 #about {
@@ -73,10 +73,27 @@ div.App__AppWrapper-sc-17y3snd-1.ePDwLM {
 
 div.App__AppWrapper-sc-17y3snd-1.ePDwLM {
   height: 800px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
   border: 1px solid #e0e0e0;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 57px;
+  width: 715px;
+}
+.App__AppWrapper-sc-17y3snd-1.ePDwLM h2 {
+  font-size: 40px;
+  border-bottom: 2px solid #e0e0e0;
 }
 
 div.app {
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+}
+
+#about {
+  padding: 28px;
+  padding-right: 12px;
+  background-color: #f2f2f2;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+  width: 800px;
 }
