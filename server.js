@@ -6,7 +6,7 @@ const port = 3000;
 const apiProxy = httpProxy.createProxyServer();
 
 const calendarServer = 'http://localhost:3001';
-const photosServer = 'http://localhost:3002';
+const photosServer = 'http://ec2-18-217-154-181.us-east-2.compute.amazonaws.com/';
 const aboutServer = 'http://localhost:3003';
 const reviewsServer = 'http://13.57.249.34';
 
