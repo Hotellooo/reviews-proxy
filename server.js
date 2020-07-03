@@ -5,9 +5,9 @@ const httpProxy = require('http-proxy');
 const port = 3000;
 const apiProxy = httpProxy.createProxyServer();
 
-const calendarServer = 'http://localhost:3001';
+const calendarServer = 'http://ec2-3-17-163-130.us-east-2.compute.amazonaws.com/';
 const photosServer = 'http://ec2-18-217-154-181.us-east-2.compute.amazonaws.com/';
-const aboutServer = 'http://localhost:3003';
+const aboutServer = 'http://ec2-54-241-67-8.us-west-1.compute.amazonaws.com/';
 const reviewsServer = 'http://13.57.249.34';
 
 
@@ -24,11 +24,6 @@ app.all('/api/calendar/update/', (req, res) => {
 });
 
 // PHOTOS
-
-// app.all('/*', (req, res) => {
-//   console.log('redirecting to photos-carousel server');
-//   apiProxy.web(req, res, {target: photosServer, changeOrigin: true});
-// });
 
 app.all('/api/:hotelId/photos', (req, res) => {
   console.log('redirecting to photos-carousel server');
