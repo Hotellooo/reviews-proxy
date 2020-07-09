@@ -45,10 +45,10 @@ div.App__Container-sc-1yy6cbu-2.egYcud {
   padding-bottom: 2px;
 }
 
-/* Photos pictures on right - styled components class changes */
-.sc-AxjAm.viAxi,
-.sc-AxjAm.bLifsr,
-.sc-AxjAm.cutPKF {
+/* containers for photos (traveler, bathroom, hotel & amenities) that change */
+.Album__Container-sc-1wr8e2m-0.jFxkbk,
+.Album__Container-sc-1wr8e2m-0.fHCGOT,
+.Album__Container-sc-1wr8e2m-0.ehZBRm {
   height: 157.5px;
 }
 
@@ -68,7 +68,7 @@ div.sc-fznNvL.jRyzVK {
 }
 
 /* About wrapper - styled components class changes */
-div.App__AppWrapper-sc-17y3snd-1.jPcUFR {
+div.AppStyles__AppWrapper-sc-1tz0hl-1.ilHqrz {
   padding: 38px;
   margin-left: 0px;
   height: 800px;
@@ -78,7 +78,9 @@ div.App__AppWrapper-sc-17y3snd-1.jPcUFR {
   padding-right: 57px;
   width: 715px;
 }
-.App__AppWrapper-sc-17y3snd-1.jPcUFR h2 {
+
+/* header for about that changes */
+.AppStyles__AppWrapper-sc-1tz0hl-1.ilHqrz h2 {
   font-size: 40px;
   border-bottom: 2px solid #e0e0e0;
 }
@@ -100,10 +102,15 @@ div.app {
 h1.page-title {
   font-family: "Trips Sans", Arial, sans-serif;
 }
+
 div.page-title {
   color: #00aa6c;
   background-color: #001f3f;
   padding-left: 8px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
-  max-width: 1200px;
+  max-width: 1254px;
+}
+
+#app {
+  float: left;
 }
